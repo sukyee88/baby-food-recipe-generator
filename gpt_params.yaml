@@ -1,0 +1,2 @@
+gpt_params:
+  gpt_3.5_params: {"model": "gpt-3.5-turbo", "messages": [{"role": "user", "content": "Hello!"}]}
