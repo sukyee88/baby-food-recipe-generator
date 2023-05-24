@@ -5,7 +5,7 @@ def main():
     openai.api_key = get_params.get_api_key()
     project_params = get_params.load_yaml()
     gpt_params = project_params["gpt_params"]["gpt_3.5_params"]
-    prompt = generate_prompt(7, 2, ['breakfast', 'lunch'], "6 months")
+    prompt = generate_prompt(3, 5, ['breakfast', 'lunch'], "2 years old")
 
     gpt_params['messages'][0]['content'] = prompt
     run_model = gpt_params['model']
